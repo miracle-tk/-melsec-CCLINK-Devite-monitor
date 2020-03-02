@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication1.WPF.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="171" Width="299" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="49" VerticalAlignment="Top" Width="300" Background="#FF166BBF">
+            <TextBlock Text="Connect" FontSize="22"  Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Grid>
+        <Grid Margin="0,54,0,41">
+            <TextBlock Text="Channel Number" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,9"/>
+            <ComboBox x:Name="comboboxChannelnumber" VerticalAlignment="Center" HorizontalAlignment="Right" Width="148" Margin="0,10,10,7">
+                <ComboBoxItem IsSelected="True">81 CCLINK SLOT 1</ComboBoxItem>
+                <ComboBoxItem >82 CCLINK SLOT 2</ComboBoxItem>
+                <ComboBoxItem>83 CCLINK SLOT 3</ComboBoxItem>
+                <ComboBoxItem>84 CCLINK SLOT 4</ComboBoxItem>
+            </ComboBox>
+        </Grid>
+        <Button Click="buttonConnect_Click" x:Name="buttonConnect" Content="Connect" HorizontalAlignment="Left" Margin="48,129,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Click="buttonCancel_Click" x:Name="buttonCancel" Content="Cancel" HorizontalAlignment="Left" Margin="153,129,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
